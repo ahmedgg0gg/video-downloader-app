@@ -1,0 +1,23 @@
+name: Build APK with Buildozer
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Buildozer
+        uses: anas-al-garoush/buildozer-action@v1.1
+
+      - name: Build APK
+        run: buildozer -v android debug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: YourApp-APK
+          path: bin/*.apk

@@ -1,0 +1,4 @@
+kivy
+yt-dlp
+arabic_reshaper
+python-bidi
