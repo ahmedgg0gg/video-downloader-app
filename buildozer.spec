@@ -9,8 +9,5 @@ orientation = portrait
 android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE
 android.api = 31
 android.accept_sdk_license = True
-android.build_tools = 33.0.0  
+android.build_tools = 33.0.0
 
-[buildozer]
-log_level = 2
-warn_on_root = 1
